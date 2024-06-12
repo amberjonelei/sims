@@ -82,27 +82,3 @@ func (ss *Sim, x float64) setXCAL{
 func (ss *Sim, x float64) setLrate{
 	ss.Lrate = x
 }
-
-//chris psuedo
-func run_simulation(model, data, parms) {
-    model.New()
-    // pass the parameters here or somewhere else to set them
-    // maybe we can use a hashmap of parameters so that it is variable length
-    // and the parameter values can be binded the model object via keyword?
-    model.Config(parms)//doesnt take params use set
-    // formerly CmdArgs
-    model.setupAndRun()
-    data.appendData(model)
-}
-
-func main(){
-
-    // initialize model
-    // initialize parameters
-    // initialize data 
-    // loop through parameters
-    for parm in parms { 
-        run_simulation(model, data, parms)    
-    }
-    return data 
-}
