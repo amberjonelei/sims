@@ -2,14 +2,9 @@
 package main
 
 import "fmt"
-//given Main function
-func (ss *Sim) main(){
-    ss.New()
-	ss.Config()
+func (ss *Sim) main2(){
+    
 
-	ss.Init()
-	win := ss.ConfigGui()
-	win.StartEventLoop()
 
     mode := 0
     fmt.Println("Enter Mode:")
@@ -69,6 +64,10 @@ func (ss *Sim) main(){
     }
 
     fmt.Printf("Ready to Train\n")
+
+    ss.Init()
+	win := ss.ConfigGui()
+	win.StartEventLoop()
 
     
 

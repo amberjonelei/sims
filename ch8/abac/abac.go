@@ -48,6 +48,7 @@ import (
 func main() {
 	gimain.Main(func() {
 		mainrun()
+
 	})
 }
 
@@ -1421,7 +1422,5 @@ func mainrun() {
 	TheSim.New()
 	TheSim.Config()
 
-	TheSim.Init()
-	win := TheSim.ConfigGui()
-	win.StartEventLoop()
+	TheSim.main2()
 }
